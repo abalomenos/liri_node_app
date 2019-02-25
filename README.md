@@ -6,6 +6,7 @@ LIRI Bot is a CLI APP that utilizes the Spotify, IMDB and Bandsintown API and gi
 * NodeJS
 * JavaScript
 * Spotify API
+* Bandsintown API
 * OMDB API
 * npm spotify-web-api-node
 * npm inquirer
