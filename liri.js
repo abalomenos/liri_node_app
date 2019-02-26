@@ -237,6 +237,9 @@ function getBot() {
 // Log data to log.txt
 function logData(command, parameter, result) {
 
+    // Clear the output
+    logOutput = "";
+
     // Create data for log.txt
     logOutput += "***********************************************************************************************************************************************************\n\n";
     logOutput += "Logged: " + timeStamp + "\n\n";
