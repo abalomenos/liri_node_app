@@ -280,6 +280,7 @@ function errorStatus(type) {
 
 }
 
+// Function to handle data once received
 function okStatus(command, parameter, consoleOutput) {
 
     // Log the data
