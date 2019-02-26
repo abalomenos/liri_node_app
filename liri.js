@@ -19,10 +19,25 @@ var logOutput = "";
 var timeStamp = moment().format("LT, MMM Do, YYYY")
 
 
-
-
 // Present user with options and get input
 function askQuestions(){
+    
+    //Clear console
+    console.log('\033c');
+    
+    // Clear the output
+    consoleOutput = "";
+    
+    // Create the output
+    consoleOutput += "******************************************\n";
+    consoleOutput += "*                                        *\n";
+    consoleOutput += "*          Welcome to Liri Bot!          *\n";
+    consoleOutput += "*                                        *\n";
+    consoleOutput += "*       Author:  Argiris Balomenos       *\n";
+    consoleOutput += "*       Date:    February 25, 2019       *\n";
+    consoleOutput += "*                                        *\n";
+    consoleOutput += "******************************************\n\n";
+    console.log(consoleOutput);
     inquirer.prompt([
         {
             type: "list",
