@@ -241,6 +241,7 @@ function logData(command, parameter, result) {
     logOutput = "";
 
     // Create data for log.txt
+    logOutput += "\n";
     logOutput += "***********************************************************************************************************************************************************\n\n";
     logOutput += "Logged: " + timeStamp + "\n\n";
     logOutput += "****************************************\n";

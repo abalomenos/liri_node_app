@@ -1,6 +1,11 @@
 # LIRI Bot
 LIRI Bot is a CLI APP that utilizes the Spotify, IMDB and Bandsintown API and gives the user the option to search for a Song, a Movie or Band/Artist. When searching for a Song or Movie, the user will get info regarding that Song or Movie. When searching for a Band/Artist, the user will be given info regarding the upcoming performances. This is a simple APP to demonstrate the usage of the below technologies.
 
+
+## Demo
+![Demo](demo/demo.gif "Liri Bot Demo")
+
+
 ## Technologies
 
 * NodeJS
@@ -50,5 +55,4 @@ SPOTIFY_SECRET="your-spotify-secret"
 ```
 
 
-## Demo
-![Demo](demo/demo.gif "Liri Bot Demo")
+
