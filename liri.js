@@ -13,9 +13,11 @@ var Spotify = require('node-spotify-api');
 var colors = require('colors/safe');
 
 
-// Create spotify Object using our Spotify ID and Secret
+// API Keys
 var keys = require("./keys.js");
 var spotify = new Spotify(keys.spotify);
+var omdb_api_key = keys.OMDB.key;
+var bit_api_key = keys.BIT.key;
 
 // Main Variables
 var beautifiedDate = "";
@@ -98,7 +100,7 @@ function getConcert(parameter) {
         parameter = "Metallica";
     }
     axios
-    .get("https://rest.bandsintown.com/artists/" + parameter + "/events?app_id=codingbootcamp")
+    .get("https://rest.bandsintown.com/artists/" + parameter + "/events?app_id=" + bit_api_key)
     .then(function(response){
 
         // Set variable JsonData for short writing later
@@ -184,7 +186,7 @@ function getMovie(parameter) {
         parameter = "Mr. Nobody";
     }
     axios
-    .get("https://www.omdbapi.com/?t=" + parameter + "&y=&plot=short&apikey=b680b3cf")
+    .get("https://www.omdbapi.com/?t=" + parameter + "&y=&plot=short&apikey=" + omdb_api_key)
     .then(function(response){
 
         // Set variable JsonData for short writing later
